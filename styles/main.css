@@ -1,0 +1,61 @@
+*{
+    background-color: darkslateblue;
+}
+
+
+body{
+    height: 100vh;
+}
+
+header img{
+    max-width: 150px;
+}
+main{
+    display: flex;
+    justify-content: center;   
+    align-items: center; 
+
+}
+.digitalclock{
+    display: flex;
+    gap: .25em;
+    color: white;
+    margin-top: 150%;
+}
+.digitalclock h3{
+    margin: 0 3px;
+}
+.container{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    border-color: black;
+}
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+@media (max-width: 768px) {
+    .digitalclock {
+        display: flex;
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center; /* Center elements */
+        font-size: 32px; /* Adjust font size for mobile */
+    }
+
+    #colon1, #colon2 {
+        display: none; /* Hide colons on mobile */
+    }
+
+    #hour, #minutes {
+        text-decoration: underline; /* Underline hour and minutes */
+    }
+    header img{
+        display: none;
+    }
+    footer{
+        height: 100vh;
+    }
+}
